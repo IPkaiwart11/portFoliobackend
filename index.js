@@ -7,7 +7,7 @@ const app = express();
 
 const connect = async()=>{
             try{
-               await mongoose.connect('mongodb+srv://ipk111998:portfolioip2314@ipportfolio.oxbjymk.mongodb.net/?retryWrites=true&w=majority');
+               await mongoose.connect(process.env.mongoDB);
                console.log('connected to mongodb');
             } catch(error){
                console.log("error is beta",error);
