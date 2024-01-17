@@ -24,7 +24,7 @@ const connect = async () => {
 mongoose.connection.on('disconnection',()=>{
                console.log('mongodb disconnected')
 })
-app.use(cors({ origin: 'https://subtle-daffodil-96d4d0.netlify.app/' }));
+app.use(cors({ origin: 'https://subtle-daffodil-96d4d0.netlify.app' }));
 app.use(express.json());
 app.use('/api/user',userroute);
 
