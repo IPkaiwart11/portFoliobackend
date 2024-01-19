@@ -11,6 +11,7 @@ const Userschema =new mongoose.Schema({
         },
         country:{
                type: String,
+               required:true,
         },
         message:{
               type:String,
