@@ -26,7 +26,7 @@ mongoose.connection.on('disconnection',()=>{
 })
 
 app.use(cors({
-  origin: 'https://ip-kaiwart.netlify.app/',
+  origin: 'https://ip-kaiwart.netlify.app',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
 }));
