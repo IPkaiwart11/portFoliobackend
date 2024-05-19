@@ -34,9 +34,9 @@ app.use(cors({
 app.use(express.json());
 app.use('/api/user',userroute);
 
-const PORT = process.env.PORT || 8800;
+const port = process.env.PORT || 8800;
 
-app.listen(PORT,()=>{
+app.listen(port,()=>{
                connect();
        console.log('server is live')        
 })
